@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import type { Comment } from "@/types/thread";
+import type { Comment } from "@/modules/threads";
 import Author from "@/modules/base/Author.vue";
 import ReplyIcon from "@/components/icons/ReplyIcon.vue";
 

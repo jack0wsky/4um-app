@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, watch } from "vue";
-import type { Comment } from "@/types/thread";
+import type { Comment, Author as User } from "@/modules/threads";
 import Author from "@/modules/base/Author.vue";
 import Reply from "@/modules/thread-details/Reply.vue";
 
 const { comment } = defineProps<{ comment: Comment }>();
 
-const usersInvolved = ref([]);
+const usersInvolved = ref<User[]>([]);
 const allReplies = (replies: Comment[]) => {
   if (replies.length === 0) return;
 

@@ -23,7 +23,7 @@ describe(Reply.name, () => {
       props: {
         reply: {
           id: "1",
-          author: { id: 1, nickname: "Jack", avatar: "" },
+          author: { id: "1", nickname: "Jack", avatar: "" },
           content: "Hi there!",
           replies: [
             {
@@ -32,9 +32,9 @@ describe(Reply.name, () => {
                 id: "2",
                 nickname: "Adam",
                 avatar: "",
-                content: "Hi you!",
-                replies: [],
               },
+              content: "Hi you!",
+              replies: [],
             },
           ],
         },

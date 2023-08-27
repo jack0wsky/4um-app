@@ -1,4 +1,4 @@
-import type { Thread } from "@/types/thread";
+import type { Thread } from "@/modules/threads";
 import { users } from "@/database/users";
 
 export const threads: Thread[] = [

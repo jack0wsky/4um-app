@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Thread } from "@/types/thread";
+import type { Thread } from "@/modules/threads";
 import Author from "@/modules/base/Author.vue";
 import { RouterLink } from "vue-router";
 

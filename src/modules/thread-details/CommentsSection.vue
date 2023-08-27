@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Comment } from "@/types/thread";
+import type { Comment } from "@/modules/threads";
 import CommentListItem from "@/modules/thread-details/CommentListItem.vue";
 
 defineProps<{ comments: Comment[] }>();

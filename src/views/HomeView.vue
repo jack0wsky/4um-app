@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import ThreadsList from "@/modules/threads/ThreadsList.vue";
 import { useThreadsStore } from "@/stores/threads";
+import { ref, watch } from "vue";
+
+const search = ref("");
+
+watch(search, (value) => {
+  store.updateSearchPhrase(value);
+});
 
 const store = useThreadsStore();
 </script>
@@ -11,7 +18,7 @@ const store = useThreadsStore();
       <input
         type="search"
         class="threads__search-input"
-        @input="store.updateSearchPhrase($event.target.value)"
+        v-model="search"
         placeholder="Search threads..."
       />
       <ThreadsList />

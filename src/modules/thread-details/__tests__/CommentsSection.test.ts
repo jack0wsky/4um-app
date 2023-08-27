@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { mount } from "@vue/test-utils";
+import type { Comment } from "../../threads";
 import CommentsSection from "../CommentsSection.vue";
-import { Comment } from "../../../types/thread";
 
 const mockData: Comment[] = [
   {

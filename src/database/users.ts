@@ -1,4 +1,4 @@
-import type { Author } from "@/types/thread";
+import type { Author } from "@/modules/threads";
 
 type Users = "rob" | "carl" | "annie" | "camile";
 
